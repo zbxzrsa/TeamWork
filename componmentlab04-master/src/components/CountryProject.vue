@@ -16,22 +16,22 @@ const props = defineProps({
 
 const columns = [
   {
-    title: '项目名称',
+    title: 'Project Name',
     dataIndex: 'projectName',
     align: 'center',
   },
   {
-    title: '金牌',
+    title: 'Gold medal',
     dataIndex: 'gold',
     align: 'center',
   },
   {
-    title: '银牌',
+    title: 'Silver medal',
     dataIndex: 'silver',
     align: 'center',
   },
   {
-    title: '铜牌',
+    title: 'Bronze medal',
     dataIndex: 'bronze',
     align: 'center',
   },
@@ -53,7 +53,7 @@ const handleTableChange = (pag: { pageSize: number; current: number }) => {
     @change="handleTableChange"
   >
     <template #title>
-      <div class="table-title">获奖项目</div>
+      <div class="table-title">The Winning Project</div>
     </template>
   </a-table>
 </template>
